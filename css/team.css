@@ -1,0 +1,89 @@
+:root {
+  --main-color: #19c8fa;
+
+  --section-padding: 100px;
+}
+/* End Variables */
+/* Start Global Rules */
+* {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+body{
+    background-color: black;
+    color: white;
+     font-family: "Marhey", sans-serif;
+     padding-left: 70px;
+     padding-right: 70px;
+}
+
+
+.main-heading {
+  text-align: center;
+  padding-top: 50px;
+  padding-bottom: 50px;
+}
+
+.main-heading h2 {
+  font-weight: normal;
+  font-size: 40px;
+  position: relative;
+  margin-bottom: 70px;
+  text-transform: uppercase;
+  font-family: "Marhey", sans-serif;
+  color:#19c8fa;
+  letter-spacing: 5px;
+}
+/* From Uiverse.io by Navarog21 */ 
+button {
+    text-align: center;
+  width: 10em;
+  position: relative;
+  height: 3.5em;
+  border: 3px ridge #19c8fa;
+  outline: none;
+  background-color: transparent;
+  color: white;
+  transition: 1s;
+  border-radius: 0.3em;
+  font-family: "Bebas Neue", sans-serif;
+  font-size: 40px;
+    letter-spacing: 5px;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+button::after {
+  content: "";
+  position: absolute;
+  top: -10px;
+  left: 3%;
+  width: 95%;
+  height: 40%;
+
+  transition: 0.5s;
+  transform-origin: center;
+}
+
+button::before {
+  content: "";
+  transform-origin: center;
+  position: absolute;
+  top: 80%;
+  left: 3%;
+  width: 95%;
+  height: 40%;
+
+  transition: 0.5s;
+}
+
+button:hover::before, button:hover::after {
+  transform: scale(0)
+}
+
+button {
+  box-shadow: inset 0px 0px 35px #19c8fa;
+}
